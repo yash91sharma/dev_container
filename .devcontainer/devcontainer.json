@@ -1,6 +1,6 @@
 {
   "dockerComposeFile": "docker-compose.yml",
-  "service": "plutus-fe-dev",
+  "service": "plutus-dev",
   "workspaceFolder": "/workspaces",
 
   // binds the local ssh keys to devcontainer
@@ -11,7 +11,15 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.formatting.provider": "black",
+        "editor.tabSize": 4
+      }
     }
   }
 
