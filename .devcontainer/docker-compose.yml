@@ -1,10 +1,12 @@
 version: "3"
 
 services:
-  plutus-fe-dev:
+  plutus-dev:
     build:
       context: .
       dockerfile: dockerfile
     volumes:
       - ..:/workspaces:cached
+    environment:
+      TZ: "America/Los_Angeles"
     command: sleep infinity
