@@ -12,4 +12,5 @@ RUN set -x \
   && npm install -g typescript \
   && pip install yfinance \
   && pip install apscheduler \
-  && pip install pipreqs
+  && pip install pipreqs \
+  && pip install flask-cors
