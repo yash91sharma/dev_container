@@ -11,6 +11,6 @@ RUN set -x \
   && pip install waitress \
   && npm install -g typescript \
   && pip install yfinance \
-  && pip install apscheduler \
   && pip install pipreqs \
-  && pip install flask-cors
+  && pip install flask-cors \
+  && pip install gunicorn
