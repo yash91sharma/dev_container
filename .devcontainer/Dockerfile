@@ -13,4 +13,6 @@ RUN set -x \
   && pip install yfinance \
   && pip install pipreqs \
   && pip install flask-cors \
-  && pip install gunicorn
+  && pip install gunicorn \
+  && pip install pytest \
+  && pip install python-dotenv
