@@ -7,6 +7,8 @@ RUN set -x \
   && apk add python3 \
   && apk add py3-pip \
   && pip install -U Flask \
+  && pip install -U fastapi \
+  && pip install -U uvicorn \
   && pip install black \
   && pip install waitress \
   && npm install -g typescript \
@@ -15,4 +17,5 @@ RUN set -x \
   && pip install flask-cors \
   && pip install gunicorn \
   && pip install pytest \
-  && pip install python-dotenv
+  && pip install python-dotenv \
+  && pip install pydantic
