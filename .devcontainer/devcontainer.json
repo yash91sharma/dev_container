@@ -14,15 +14,21 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "ms-python.python"
+        "ms-python.python",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ],
       "settings": {
         "python.formatting.provider": "black",
         "editor.tabSize": 4,
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 5000,
-        "python.analysis.typeCheckingMode": "basic",
-        "python.analysis.autoImportCompletions": true
+        "python.analysis.typeCheckingMode": "standard",
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.diagnosticSeverityOverrides": {
+          "unused-import": "warning",
+          "unused-variable": "warning"
+        }
       }
     }
   }
