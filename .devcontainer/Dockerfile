@@ -6,16 +6,15 @@ RUN set -x \
   && apk add --update nodejs npm \
   && apk add python3 \
   && apk add py3-pip \
-  && pip install -U Flask \
   && pip install -U fastapi \
   && pip install -U uvicorn \
   && pip install black \
-  && pip install waitress \
   && npm install -g typescript \
   && pip install yfinance \
   && pip install pipreqs \
-  && pip install flask-cors \
-  && pip install gunicorn \
   && pip install pytest \
   && pip install python-dotenv \
-  && pip install pydantic
+  && pip install pydantic \
+  && pip install pytest-asyncio \
+  && pip install sqlalchemy \
+  && pip install openapi-python-client
