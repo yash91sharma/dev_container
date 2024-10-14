@@ -17,4 +17,5 @@ RUN set -x \
   && pip install pydantic \
   && pip install pytest-asyncio \
   && pip install sqlalchemy \
-  && pip install openapi-python-client
+  && pip install openapi-python-client \
+  && pip install PyJWT
