@@ -6,6 +6,7 @@ RUN set -x \
   && apk add --update nodejs npm \
   && apk add python3 \
   && apk add py3-pip \
+  && apk add redis \
   && pip install -U fastapi \
   && pip install -U uvicorn \
   && pip install black \
@@ -18,4 +19,8 @@ RUN set -x \
   && pip install pytest-asyncio \
   && pip install sqlalchemy \
   && pip install openapi-python-client \
-  && pip install PyJWT
+  && pip install PyJWT \
+  && pip install pyjwt[crypto] \
+  && pip install isort \
+  && pip install redis \
+  && pip install apscheduler
