@@ -16,7 +16,8 @@
         "dbaeumer.vscode-eslint",
         "ms-python.python",
         "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "GitHub.copilot-chat",
+        "ms-python.vscode-pylance"
       ],
       "settings": {
         "python.formatting.provider": "black",
@@ -27,7 +28,13 @@
         "python.analysis.autoImportCompletions": true,
         "python.analysis.diagnosticSeverityOverrides": {
           "unused-import": "warning",
-          "unused-variable": "warning"
+          "unused-variable": "warning",
+          "unused-function": "warning"
+        },
+        "typescriptHero.imports.sorting": {
+          "enabled": true,
+          "sortMethod": "alphabetically",
+          "sortOnSave": true
         }
       }
     }
