@@ -11,7 +11,7 @@ RUN set -x \
   && pip install -U uvicorn \
   && pip install black \
   && npm install -g typescript \
-  && pip install yfinance \
+  && pip install yfinance==0.2.55 \
   && pip install pipreqs \
   && pip install pytest \
   && pip install python-dotenv \
